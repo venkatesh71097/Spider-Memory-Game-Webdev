@@ -60,7 +60,7 @@ if (turns==0) {
 
 else
  { turns = 2;
-  secondchoice = card;
+  card2 = card;
   document.images[card].src =letters[card];
   intr=setInterval("check()",1000);
    }
@@ -72,8 +72,8 @@ function check()
  clearInterval(intr);
  if (letters[card2]==letters[card1])
  {
-     cntr++;
-     if (cntr == numOfMatches)
+     count++;
+     if (count == numOfMatches)
  {
           alert("You won. Wanna replay? press ok");
 	
