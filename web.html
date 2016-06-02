@@ -60,7 +60,7 @@ if (turns==0) {
 
 else
  { turns = 2;
-  card2 = card;
+  card2= card;
   document.images[card].src =letters[card];
   intr=setInterval("check()",1000);
    }
@@ -84,8 +84,8 @@ function check()
     }
 
   else {
-    document.images[card1].src = backcard;
-    document.images[card2].src = backcard;
+    document.images[card1].src = hide;
+    document.images[card2].src = hide;
     turns = 0;
     return ;
        }
